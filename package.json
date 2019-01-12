@@ -1,0 +1,14 @@
+{
+  "name": "half-pint-games",
+  "version": "1.0.0",
+  "description": "Half Pint Games",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael King",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

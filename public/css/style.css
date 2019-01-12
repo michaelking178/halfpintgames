@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+    color: #ddd;
+}
+
+html {
+	background-color: #090909;
+	scroll-behavior: smooth;
+}
+
+.navbar {
+	background: rgba(10, 10, 10, 0.9);
+}
+
+.navbar.scrolled {
+	background: rgba(10, 10, 10, 0.9);
+	transition: background 1s;
+}
+
+.nav-item {
+	margin-right: 1.5vh;
+}
+
+#content {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/frontpage.jpg");
+    background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.container {
+	width: 80%;
+	max-width: 1200px;
+}
+
+.module {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.module h2 {
+	padding-top: 10vh;
+	margin: 0 auto;
+}
+
+.splash {
+	align-items: center;
+	justify-content: center;
+}
+
+.item {
+	max-width: 1200px;
+	text-align: center;
+}
+
+.row {
+	align-content: middle;
+}
+
+h1, h2, #splash-caption {
+	font-family: "Fjalla One";
+}
+
+h1 {
+	font-size: 4rem;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
+
+h2 {
+	padding-bottom: 50px;
+	font-size: 3rem;
+}
+
+p {
+	font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+	p {
+	 font-size: 1.4rem;
+	}
+}
+
+footer {
+	min-height: 10vh;
+	background-color: #090909;
+	padding-top: 3vh;
+}
+
+footer p {
+	color: #999;
+	font-size: .85rem;
+	text-align: center;
+	line-height: .25;
+}
+
+footer a {
+	color: #555;
+}
+
+footer a:hover {
+	color: #777;
+	text-decoration: none;
+}
+
+.game-title {
+	font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  .game-title {
+    font-size: 3.5rem;
+  }
+}
+
+.carousel {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.games-hr {
+	margin-top: 3vh;
+}
+
+.section-hr {
+	width: 50%;
+	border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #333, #999, #333);
+    margin: 5vh auto 0 auto;
+}
+
+#hamburger:focus {
+	outline: none;
+	box-shadow: none;
+}

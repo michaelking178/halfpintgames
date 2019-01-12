@@ -1,3 +1,6 @@
+/*----------------/
+/  Initial Setup  /
+/----------------*/
 * {
     margin: 0;
     padding: 0;
@@ -10,58 +13,27 @@ html {
 	scroll-behavior: smooth;
 }
 
-.navbar {
-	background: rgba(10, 10, 10, 0.9);
+.container {
+	width: 80%;
+	max-width: 1200px;
 }
 
-.navbar.scrolled {
+/*---------------/
+/  Navbar Setup  /
+/---------------*/
+.navbar {
 	background: rgba(10, 10, 10, 0.9);
-	transition: background 1s;
 }
 
 .nav-item {
 	margin-right: 1.5vh;
 }
 
-#content {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/frontpage.jpg");
-    background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-}
+/*---------------/
+/  Main Content  /
+/---------------*/
 
-.container {
-	width: 80%;
-	max-width: 1200px;
-}
-
-.module {
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-}
-
-.module h2 {
-	padding-top: 10vh;
-	margin: 0 auto;
-}
-
-.splash {
-	align-items: center;
-	justify-content: center;
-}
-
-.item {
-	max-width: 1200px;
-	text-align: center;
-}
-
-.row {
-	align-content: middle;
-}
-
-h1, h2, #splash-caption {
+h1, h2, h3, #splash-caption {
 	font-family: "Fjalla One";
 }
 
@@ -69,25 +41,9 @@ h1 {
 	font-size: 4rem;
 }
 
-@media (min-width: 768px) {
-  h1 {
-    font-size: 6rem;
-  }
-}
-
 h2 {
 	padding-bottom: 50px;
 	font-size: 3rem;
-}
-
-p {
-	font-size: 1rem;
-}
-
-@media (min-width: 768px) {
-	p {
-	 font-size: 1.4rem;
-	}
 }
 
 footer {
@@ -112,14 +68,30 @@ footer a:hover {
 	text-decoration: none;
 }
 
-.game-title {
-	font-size: 2rem;
+.splash {
+	align-items: center;
+	justify-content: center;
 }
 
-@media (min-width: 768px) {
-  .game-title {
-    font-size: 3.5rem;
-  }
+.module {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.module h2 {
+	padding-top: 10vh;
+	margin: 0 auto;
+}
+
+.row {
+	align-content: middle;
+}
+
+.item {
+	max-width: 1200px;
+	text-align: center;
 }
 
 .carousel {
@@ -140,7 +112,31 @@ footer a:hover {
     margin: 5vh auto 0 auto;
 }
 
+#content {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/frontpage.jpg");
+    background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
 #hamburger:focus {
 	outline: none;
 	box-shadow: none;
+}
+
+/*--------------/
+/ Media Queries /
+/--------------*/
+@media (min-width: 768px) {
+	.game-title {
+	  font-size: 3.5rem;
+	}
+	
+	p {
+		font-size: 1.4rem;
+	}
+
+	h1 {
+		font-size: 6rem;
+	}
 }

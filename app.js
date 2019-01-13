@@ -1,4 +1,5 @@
 const express = require('express');
+const sendGrid = require('./api');
 
 const app = express();
 app.use(express.static('public'));

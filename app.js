@@ -1,9 +1,13 @@
 const express = require('express');
+const nodeMailer = require('nodemailer');
+const bodyParser = require('body-parser');
 const sendGrid = require('./api');
 
 const app = express();
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
 
 // Routes
 app.get('/', function(req, res){

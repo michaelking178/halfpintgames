@@ -1,5 +1,5 @@
 const express = require('express');
-const nodeMailer = require('nodemailer');
+const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const sendGrid = require('./api');
 
